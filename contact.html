@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - CodeLearn</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">CodeLearn</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="courses.html" class="nav-link">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Contact Us</h1>
+            <p class="page-subtitle">Get in touch with our team - we're here to help you on your programming journey</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>Have questions about our courses or need help getting started? We're here to help!</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>info@codelearn.com</p>
+                                <p>support@codelearn.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-details">
+                                <h3>Phone</h3>
+                                <p>(555) 123-4567</p>
+                                <p>Mon - Fri: 9AM - 6PM EST</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">💬</div>
+                            <div class="contact-details">
+                                <h3>Live Chat</h3>
+                                <p>Available on our website</p>
+                                <p>Response time: &lt; 1 hour</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <h2>Send us a Message</h2>
+                        
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="topic">Topic *</label>
+                            <select id="topic" name="topic" required>
+                                <option value="">Please select a topic</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="courses">Course Information</option>
+                                <option value="technical">Technical Support</option>
+                                <option value="enrollment">Enrollment Help</option>
+                                <option value="partnership">Partnership Opportunities</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="error-message" id="topicError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Please describe how we can help you..." required></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                Subscribe to our newsletter for course updates and programming tips
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" id="submitBtn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loader" style="display: none;">Sending...</span>
+                        </button>
+
+                        <div class="form-success" id="successMessage">
+                            <div class="success-icon">✓</div>
+                            <h3>Message Sent Successfully!</h3>
+                            <p>Thank you for contacting us. We'll get back to you within 24 hours.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How do I enroll in a course?</h3>
+                    <p>Simply browse our courses page, select the course you're interested in, and click "Enroll Now". You'll be guided through the registration process.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you offer refunds?</h3>
+                    <p>Yes, we offer a 30-day money-back guarantee for all our courses. If you're not satisfied, you can request a full refund within 30 days of enrollment.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Are the courses self-paced?</h3>
+                    <p>Our courses are designed to be flexible. While we provide suggested timelines, you can learn at your own pace and access materials 24/7.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do I get a certificate?</h3>
+                    <p>Yes, upon successful completion of any course, you'll receive a certificate of completion that you can add to your LinkedIn profile or resume.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CodeLearn</h3>
+                    <p>Empowering developers worldwide with quality programming education.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Email: info@codelearn.com</p>
+                    <p>Phone: (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CodeLearn. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

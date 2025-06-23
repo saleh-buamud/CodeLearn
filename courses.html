@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - CodeLearn</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">CodeLearn</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="courses.html" class="nav-link active">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Programming Courses</h1>
+            <p class="page-subtitle">Choose from our comprehensive selection of programming courses designed for all skill levels</p>
+        </div>
+    </section>
+
+    <!-- Courses Grid -->
+    <section class="courses">
+        <div class="container">
+            <div class="courses-grid">
+                <!-- JavaScript Course -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=400" alt="JavaScript Course" loading="lazy">
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">JavaScript Fundamentals</h3>
+                        <p class="course-description">
+                            Master the fundamentals of JavaScript, the most popular programming language for web development. 
+                            Learn variables, functions, DOM manipulation, and modern ES6+ features.
+                        </p>
+                        <div class="course-meta">
+                            <span class="course-duration">8 weeks</span>
+                            <span class="course-price">$199</span>
+                        </div>
+                        <div class="course-features">
+                            <span class="feature">✓ Interactive Exercises</span>
+                            <span class="feature">✓ Real Projects</span>
+                            <span class="feature">✓ Certificate</span>
+                        </div>
+                        <button class="btn btn-primary">Enroll Now</button>
+                    </div>
+                </div>
+
+                <!-- Python Course -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Python Course" loading="lazy">
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Python Programming</h3>
+                        <p class="course-description">
+                            Learn Python from scratch and build real-world applications. Cover data structures, 
+                            object-oriented programming, web scraping, and data analysis fundamentals.
+                        </p>
+                        <div class="course-meta">
+                            <span class="course-duration">10 weeks</span>
+                            <span class="course-price">$249</span>
+                        </div>
+                        <div class="course-features">
+                            <span class="feature">✓ Hands-on Projects</span>
+                            <span class="feature">✓ Career Support</span>
+                            <span class="feature">✓ Lifetime Access</span>
+                        </div>
+                        <button class="btn btn-primary">Enroll Now</button>
+                    </div>
+                </div>
+
+                <!-- React Course -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.pexels.com/photos/11035471/pexels-photo-11035471.jpeg?auto=compress&cs=tinysrgb&w=400" alt="React Course" loading="lazy">
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">React Development</h3>
+                        <p class="course-description">
+                            Build modern, interactive web applications with React. Learn components, hooks, state management, 
+                            routing, and deployment to create professional-grade applications.
+                        </p>
+                        <div class="course-meta">
+                            <span class="course-duration">12 weeks</span>
+                            <span class="course-price">$299</span>
+                        </div>
+                        <div class="course-features">
+                            <span class="feature">✓ Modern React</span>
+                            <span class="feature">✓ Portfolio Projects</span>
+                            <span class="feature">✓ Job Interview Prep</span>
+                        </div>
+                        <button class="btn btn-primary">Enroll Now</button>
+                    </div>
+                </div>
+
+                <!-- Node.js Course -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Node.js Course" loading="lazy">
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Node.js Backend Development</h3>
+                        <p class="course-description">
+                            Master server-side JavaScript with Node.js. Build RESTful APIs, work with databases, 
+                            implement authentication, and deploy scalable web applications.
+                        </p>
+                        <div class="course-meta">
+                            <span class="course-duration">10 weeks</span>
+                            <span class="course-price">$279</span>
+                        </div>
+                        <div class="course-features">
+                            <span class="feature">✓ API Development</span>
+                            <span class="feature">✓ Database Integration</span>
+                            <span class="feature">✓ Deployment</span>
+                        </div>
+                        <button class="btn btn-primary">Enroll Now</button>
+                    </div>
+                </div>
+
+                <!-- Full Stack Course -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Full Stack Course" loading="lazy">
+                        <div class="course-level">Advanced</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Full Stack Web Development</h3>
+                        <p class="course-description">
+                            Complete full stack development bootcamp covering frontend, backend, databases, and deployment. 
+                            Build and deploy complete web applications from start to finish.
+                        </p>
+                        <div class="course-meta">
+                            <span class="course-duration">16 weeks</span>
+                            <span class="course-price">$499</span>
+                        </div>
+                        <div class="course-features">
+                            <span class="feature">✓ Complete Stack</span>
+                            <span class="feature">✓ Capstone Project</span>
+                            <span class="feature">✓ Job Guarantee</span>
+                        </div>
+                        <button class="btn btn-primary">Enroll Now</button>
+                    </div>
+                </div>
+
+                <!-- Data Science Course -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Data Science Course" loading="lazy">
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Data Science with Python</h3>
+                        <p class="course-description">
+                            Dive into data science with Python. Learn data analysis, visualization, machine learning fundamentals, 
+                            and work with real datasets to solve business problems.
+                        </p>
+                        <div class="course-meta">
+                            <span class="course-duration">14 weeks</span>
+                            <span class="course-price">$399</span>
+                        </div>
+                        <div class="course-features">
+                            <span class="feature">✓ Real Datasets</span>
+                            <span class="feature">✓ ML Fundamentals</span>
+                            <span class="feature">✓ Industry Projects</span>
+                        </div>
+                        <button class="btn btn-primary">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Programming Journey?</h2>
+                <p>Join thousands of students who have transformed their careers with our courses</p>
+                <a href="contact.html" class="btn btn-primary">Get Started Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CodeLearn</h3>
+                    <p>Empowering developers worldwide with quality programming education.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Email: info@codelearn.com</p>
+                    <p>Phone: (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CodeLearn. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
