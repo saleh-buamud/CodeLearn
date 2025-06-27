@@ -1,0 +1,151 @@
+/* Courses Page Specific Styles */
+
+/* Page Header */
+.page-header {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 120px 0 60px;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.page-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 1rem;
+}
+
+.page-subtitle {
+    font-size: 1.2rem;
+    color: #666666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Courses Section */
+.courses {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.course-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid #f0f0f0;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.course-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.course-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    filter: grayscale(30%);
+}
+
+.course-card:hover .course-image img {
+    transform: scale(1.05);
+}
+
+.course-level {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: #000000;
+    color: #ffffff;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.course-content {
+    padding: 1.5rem;
+}
+
+.course-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #000000;
+}
+
+.course-description {
+    color: #666666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.course-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.course-duration {
+    color: #666666;
+    font-size: 0.9rem;
+}
+
+.course-price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #000000;
+}
+
+.course-features {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.feature {
+    color: #666666;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design for Courses Page */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .courses-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .course-card {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .course-card {
+        margin: 0;
+    }
+}

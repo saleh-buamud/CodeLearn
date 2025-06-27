@@ -1,0 +1,244 @@
+/* Contact Page Specific Styles */
+
+/* Page Header */
+.page-header {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 120px 0 60px;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.page-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 1rem;
+}
+
+.page-subtitle {
+    font-size: 1.2rem;
+    color: #666666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Contact Section */
+.contact {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 1rem;
+}
+
+.contact-info>p {
+    color: #666666;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-method {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.contact-icon {
+    font-size: 1.5rem;
+    filter: grayscale(100%);
+}
+
+.contact-details h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 0.5rem;
+}
+
+.contact-details p {
+    color: #666666;
+    margin-bottom: 0.25rem;
+}
+
+/* Contact Form */
+.contact-form-container {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #e9ecef;
+}
+
+.contact-form h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #000000;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    background-color: #ffffff;
+    color: #1a1a1a;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #000000;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.form-group.error input,
+.form-group.error select,
+.form-group.error textarea {
+    border-color: #dc3545;
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    display: block;
+}
+
+.checkbox-group {
+    margin-bottom: 1.5rem;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    cursor: pointer;
+    color: #666666;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: auto;
+    margin-top: 0.25rem;
+}
+
+.form-success {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    margin-top: 1rem;
+    display: none;
+}
+
+.form-success.show {
+    display: block;
+}
+
+.success-icon {
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 1rem;
+}
+
+.form-success h3 {
+    color: #000000;
+    margin-bottom: 0.5rem;
+}
+
+.form-success p {
+    color: #666666;
+}
+
+.btn-loader {
+    display: none;
+}
+
+/* FAQ Section */
+.faq {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.faq-item {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #f0f0f0;
+}
+
+.faq-item h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 1rem;
+}
+
+.faq-item p {
+    color: #666666;
+    line-height: 1.6;
+}
+
+/* Responsive Design for Contact Page */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .contact-form-container {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form-container {
+        padding: 1.5rem;
+    }
+}
