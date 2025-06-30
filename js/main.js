@@ -1,7 +1,6 @@
 // This file is intentionally minimal as the website uses vanilla HTML/CSS/JS
 // All functionality is handled in script.js which is loaded by each HTML page
 
-console.log('CodeLearn Programming Courses Website Loaded');
 
 // Optional: Add any global initialization here if needed
 
@@ -11,13 +10,13 @@ console.log('CodeLearn Programming Courses Website Loaded');
 
 // Wait for the page to fully load before running any code
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('Page loaded! Starting JavaScript...');
     
     // Set up all the website features
     setupMobileMenu();
     setupContactForm();
     setupCourseButtons();
     setupScrollToTop();
+    setupScrollToTop(); // هذه الوظيفة يجب أن تكون معرّفة مسبقاً
     setupNavbarScroll();
     setupSmoothScrolling();
 });

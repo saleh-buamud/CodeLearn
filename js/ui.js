@@ -6,27 +6,6 @@
 // COURSE ENROLLMENT BUTTONS
 // ========================================
 
-function setupCourseButtons() {
-    // Listen for clicks on course enrollment buttons
-    document.addEventListener('click', function(event) {
-        // Check if the clicked element is a course enrollment button
-        if (event.target.matches('.course-card .btn-primary')) {
-            event.preventDefault();
-            
-            // Get the course card that was clicked
-            var courseCard = event.target.closest('.course-card');
-            var courseTitle = courseCard.querySelector('.course-title').textContent;
-            
-            // Ask user for confirmation
-            var userConfirmed = confirm('Would you like to enroll in "' + courseTitle + '"?\n\nThis will redirect you to the enrollment page.');
-            
-            if (userConfirmed) {
-                // Show enrollment message (this would normally redirect to enrollment page)
-                alert('Redirecting to enrollment for "' + courseTitle + '"...\n\nThis is a demo - actual enrollment would happen here.');
-            }
-        }
-    });
-}
 
 // ========================================
 // SCROLL TO TOP BUTTON
