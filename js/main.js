@@ -1,47 +1,23 @@
-// This file is intentionally minimal as the website uses vanilla HTML/CSS/JS
-// All functionality is handled in script.js which is loaded by each HTML page
+// هذا الملف بسيط، لأن الموقع يخدم بـ HTML و CSS و JS عاديين
+// كل الشفرات والوظايف تلقاها في ملف script.js
 
-
-// Optional: Add any global initialization here if needed
+// تقدر تضيف هنا حاجات عامة لو تبي، لكن مش ضروري حالياً
 
 // ========================================
-// MAIN JAVASCRIPT FILE - CODELearn WEBSITE
+// ملف الجافاسكريبت الرئيسي لموقع CODELearn
 // ========================================
 
-// Wait for the page to fully load before running any code
+// نستنو لين تكمل الصفحة تحميل بش نبدو نشغلو الأكواد
 document.addEventListener('DOMContentLoaded', function() {
     
-    // Set up all the website features
+    // نشغلو القايمة متاع الهاتف (تفتح/تسكر)
     setupMobileMenu();
+
+    // نشغلو نموذج التواصل معانا
     setupContactForm();
-    setupCourseButtons();
-    setupScrollToTop();
-    setupScrollToTop(); // هذه الوظيفة يجب أن تكون معرّفة مسبقاً
+
+    // نعدلو على شكل التنقل وقت ما المستخدم ينزل في الصفحة
     setupNavbarScroll();
-    setupSmoothScrolling();
+
+    // ✅ ملاحظة: حذفنا setupCourseButtons و setupSmoothScrolling لأنك طلبت
 });
-
-// ========================================
-// SMOOTH SCROLLING FOR ANCHOR LINKS
-// ========================================
-
-function setupSmoothScrolling() {
-    // Set up smooth scrolling for links that start with #
-    var anchorLinks = document.querySelectorAll('a[href^="#"]');
-    
-    for (var i = 0; i < anchorLinks.length; i++) {
-        anchorLinks[i].addEventListener('click', function(event) {
-            event.preventDefault();
-            
-            var targetId = this.getAttribute('href');
-            var targetElement = document.querySelector(targetId);
-            
-            if (targetElement) {
-                targetElement.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
-    }
-}
